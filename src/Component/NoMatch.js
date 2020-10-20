@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const 404 = () => {
+const NoMatch = () => {
     return ( 
         <div>
             <h1>Page not found</h1>
@@ -8,4 +8,4 @@ const 404 = () => {
      );
 }
  
-export default 404;
+export default NoMatch;

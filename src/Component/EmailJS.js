@@ -17,6 +17,8 @@ export default function ContactUs() {
   }
 
   return (
+    <div  style={{border: "2px solid black", marginTop: "5px", padding: "5px"}}>
+    <h1>Contact Us</h1>
     <form className="contact-form" onSubmit={sendEmail}>
       <input type="hidden" name="contact_number" />
       <label>Name</label>
@@ -27,5 +29,6 @@ export default function ContactUs() {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
+    </div>
   );
 }
