@@ -3,6 +3,7 @@ import Menu from './Menu'
 import Carousel from './Carousel'
 import EmailJS from './EmailJS'
 import SocialMedia from './SocialMedia'
+import Instgram from './Instagram'
 
 export default class Main extends Component {
     render() {
@@ -12,6 +13,7 @@ export default class Main extends Component {
                 < Menu />
                 < Carousel />
                 < SocialMedia />
+                < Instgram />
                 < EmailJS />
             </div>
         )
