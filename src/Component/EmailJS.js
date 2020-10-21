@@ -8,11 +8,7 @@ export default function ContactUs(props) {
 
   function sendEmail(e) {
     e.preventDefault();
-    console.log(e.target.user_name.value)
-    console.log(e.target.user_email.value)
-    console.log(value)
-    if ( value === undefined){
-      console.log("error")
+    if ( !e.target[1].value || !e.target[2].value || !value ){
       setError("Please fill in all the fields")
     } else{
       emailjs.sendForm('service_uhwh88u', 'template_xueo4qa', e.target, 'user_vGpxGQNx4ADjnwd7Q4hgj')
