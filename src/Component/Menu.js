@@ -1,7 +1,14 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import Subscription from './Subscription'
 
-const Menu = () => {
+const Menu = (props) => {
+    const [modal, setModal] = useState(false)
+    
+    const handleClick = (event) => {
+        setModal(!modal)
+    }
+
     return (
         <div style={{border: "2px solid black"}}>
             <ul>
@@ -13,8 +20,9 @@ const Menu = () => {
             </ul>
             <ul>
                 {/* subscription modle or seprate page */}
-                <li>sign up for updates</li>
+                <li onClick={handleClick}>sign up for updates</li>
             </ul>
+            { modal ? < Subscription /> : null}
         </div>
       );
 }
