@@ -14,7 +14,7 @@ export default class Main extends Component {
                 < Carousel />
                 < SocialMedia />
                 < Instgram />
-                < EmailJS />
+                {/* < EmailJS /> */}
             </div>
         )
     }
