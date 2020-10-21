@@ -12,6 +12,7 @@ const Menu = () => {
                 <Link to='/ContactUs'><li>contact us</li></Link>
             </ul>
             <ul>
+                {/* subscription modle or seprate page */}
                 <li>sign up for updates</li>
             </ul>
         </div>
