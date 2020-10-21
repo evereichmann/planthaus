@@ -6,7 +6,7 @@ export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_uhwh88u', 'template_xueo4qa', e.target, 'user_vGpxGQNx4ADjnwd7Q4hgj')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -16,7 +16,7 @@ export default function ContactUs() {
 
   return (
     <div  style={{border: "2px solid black", marginTop: "5px", padding: "5px"}}>
-    <h1>Contact Us</h1>
+    <h3>Contact Us</h3>
     <form className="contact-form" onSubmit={sendEmail}>
       <input type="hidden" name="contact_number" />
       <label>Name</label>
