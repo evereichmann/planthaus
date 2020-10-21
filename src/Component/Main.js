@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import Menu from './Menu'
 import Carousel from './Carousel'
-import EmailJS from './EmailJS'
+// import EmailJS from './EmailJS'
 import SocialMedia from './SocialMedia'
 import Instgram from './Instagram'
 
