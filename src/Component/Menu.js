@@ -11,7 +11,7 @@ const Menu = (props) => {
 
     return (
         <div style={{border: "2px solid black"}}>
-            <ul>
+            <ul style={{}}>
                 <Link to='/About'><li style={{ display: "inline", marginRight: "10px"}}>about</li></Link>
                 {/* link to etsy or page with images that link to etsy for now */}
                 <li style={{ display: "inline", marginRight: "10px"}}>shop</li>

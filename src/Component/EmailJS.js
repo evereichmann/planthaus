@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
+import {  Link } from "react-router-dom";
 
 export default function ContactUs(props) {
   
@@ -25,9 +26,15 @@ export default function ContactUs(props) {
   }
 
   return (
-    <div  style={{border: "2px solid black", marginTop: "5px", padding: "5px"}}>
-    <h3>Contact Us</h3>
-    <form className="contact-form" onSubmit={sendEmail}>
+    <div >
+    <h1 style={{border: "2px solid black", padding: "1%"}}>Contact Us</h1>
+    <ul style={{border: "2px solid black", padding: "1%"}}>
+                <Link to="/"><li style={{ display: "inline", marginRight: "10px"}}>main</li></Link>
+                <Link to="/About"><li style={{ display: "inline", marginRight: "10px"}}>about</li></Link>
+                <li style={{ display: "inline", marginRight: "10px"}}>shop</li>
+                <Link to="/Blogs"><li style={{ display: "inline", marginRight: "10px"}}>blog</li></Link>
+    </ul>
+    <form className="contact-form" onSubmit={sendEmail} style={{border: "2px solid black", padding: "1%"}}>
       <input type="hidden" name="contact_number" />
       <label>Name</label>
       <input type="text" name="user_name"/>
@@ -36,8 +43,8 @@ export default function ContactUs(props) {
       <label>Message</label>
       <textarea name="message" value={value} onChange={handleChange} />
       <input type="submit" value="Send" />
-    </form>
     { error ? <p>{error}</p> : null }
+    </form>
     </div>
   );
 }

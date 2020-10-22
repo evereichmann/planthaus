@@ -15,7 +15,7 @@ const AdminLogin = (props) => {
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           console.log(user)
-          props.history.push('/adminlanding')
+          props.history.push('/AdminLanding')
           // redirect or do something
         } else {
           console.log('no one signed in')
