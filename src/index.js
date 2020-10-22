@@ -7,7 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import * as firebase from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  apiKey: 'AIzaSyC4XUFkqVVMACaUc9dJr_7v7THISfBkUGw',
+  // apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: "planthaus-13436.firebaseapp.com",
   databaseURL: "https://planthaus-13436.firebaseio.com",
   projectId: "planthaus-13436",
