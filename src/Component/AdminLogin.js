@@ -3,9 +3,10 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import { useForm } from 'react-hook-form';
     // admin@planthaus.com // admin123
-const AdminLogin = () => {
+const AdminLogin = (props) => {
 
     const { register, handleSubmit, errors } = useForm();
+
     const onSubmit = data => {
       firebase.auth().signInWithEmailAndPassword(data.email, data.password).catch(function(error) {
         const errorMessage = error.message;
@@ -14,6 +15,7 @@ const AdminLogin = () => {
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           console.log(user)
+          props.history.push('/adminlanding')
           // redirect or do something
         } else {
           console.log('no one signed in')
