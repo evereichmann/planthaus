@@ -14,11 +14,12 @@ const AdminLogin = (props) => {
       });
       firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-          console.log(user)
+          console.log(user.auth)
           props.history.push('/AdminLanding')
           // redirect or do something
         } else {
           console.log('no one signed in')
+          props.history.push('/')
         }
       });
     }  

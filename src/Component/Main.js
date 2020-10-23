@@ -4,6 +4,7 @@ import Carousel from './Carousel'
 // import EmailJS from './EmailJS'
 import SocialMedia from './SocialMedia'
 import Instgram from './Instagram'
+import MailChimp from './MailChimp'
 
 export default class Main extends Component {
     render() {
@@ -15,6 +16,7 @@ export default class Main extends Component {
                 < Carousel />
                 < SocialMedia />
                 < Instgram />
+                < MailChimp />
                 {/* < EmailJS /> */}
             </div>
         )
