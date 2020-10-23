@@ -18,9 +18,9 @@ class MailChimp extends React.Component {
                 "status": "subscribed"
             },
             headers: {
-              "X-Auth-Token": "e326b5d9a50217c27d4bafc461d69d19-us2",
+              "X-Auth-Token": "",
               "Content-Type": "application/json",
-              "Authorization": "apikey e326b5d9a50217c27d4bafc461d69d19-us2"
+              "Authorization": ""
             }}
             
             fetch(url, reqObj)
